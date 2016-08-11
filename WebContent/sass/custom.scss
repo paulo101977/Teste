@@ -1,0 +1,43 @@
+$yellow: yellow;
+$size: 30px;
+$blue: #337ab7;
+$white: #f6f6f6;
+$max-height: 636px;
+$zoom: 1.2;
+$withoutzoom: 1;
+$time: 1s;
+
+.star{
+    color: $yellow;
+}
+
+.media-object{
+    height: $size;
+    width: $size;
+}
+
+body , .jumbotron {
+    background: linear-gradient(to right, $blue 0%, $blue 50%,$white 50%,$white 100%);
+}
+
+.panel-body{
+    max-height: $max-height;
+    overflow-y: scroll; 
+    overflow-x:hidden;
+}
+
+.btn-info:hover{
+    -ms-transform: scale($zoom); /* IE 9 */
+    -webkit-transform: scale($zoom); /* Safari */
+    transform: scale($zoom);
+    -webkit-transition-duration: $time; /* Safari */
+    transition-duration: $time;
+}
+
+.btn-info:not( :hover ){
+    -ms-transform: scale($withoutzoom); /* IE 9 */
+    -webkit-transform: scale($withoutzoom); /* Safari */
+    transform: scale($withoutzoom);
+    -webkit-transition-duration: $time; /* Safari */
+    transition-duration: $time;
+}

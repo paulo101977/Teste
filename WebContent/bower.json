@@ -1,0 +1,40 @@
+{
+  "name": "Test Api Github Globo.com",
+  "version": "1.0.0",
+  "description": "Test Api Github Globo.com",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "Globo",
+    "Github",
+    "Api"
+  ],
+  "authors": [
+    "Paulo Galdino"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "angular": "~1.4.7",
+    "angular-route": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "angular-ui-scrollpoint": "^2.1.1",
+    "angular-strap": "^2.3.9",
+    "angular-scroll": "^1.0.0",
+    "angular-ui-map": "^0.5.0",
+    "angular-ui-event": "^1.0.0",
+    "angular-bootstrap": "^2.0.0"
+  },
+  "resolutions": {
+    "angular": "~1.4.7"
+  }
+}

@@ -1,0 +1,42 @@
+<div class="panel panel-default" ng-show="repo.name">
+    <div class="panel-heading"><h2>Repository Info</h2></div>
+    
+    <div class="panel-body">
+        <h3>Name: {{repo.name}}</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div type="button" class="btn btn-primary btn-info">Stars: 
+                    <i class="glyphicon glyphicon-star star"></i>
+                    <span class="badge">{{repo.stargazers_count}} Stars</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div type="button" class="btn btn-primary btn-info">Forks: 
+                    <span class="badge">{{repo.forks}} Forks</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"><h4>Commits: </h4></div>
+        </div>
+        
+        <!--  
+
+        //author.avatar_url
+        //commit.message
+        //commit.author.name
+
+        -->
+        
+        <div class="row">
+            <div class="col-md-10 col-md-offset-2">
+                <block-quote></block-quote>
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-2">
+                <button ng-show="showButton" ng-click="increaseLimit()" class="btn btn-primary btn-info">Loading more...</button>
+            </div>    
+        </div>
+    </div>
+</div>

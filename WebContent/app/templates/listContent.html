@@ -1,0 +1,5 @@
+<span class="text-center" ng-repeat="repo in repos | orderBy : '-stargazers_count'">
+    <li ng-class="{active: repo.name == active}">
+        <a class="btn btn-primary btn-block" ng-click="setActive(repo.name , repo)" ng-href="#/repository/{{repo.name}}">{{repo.name}}</a>
+    </li>
+</span>

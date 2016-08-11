@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head 
+         content must come *after* these tags -->
+    
+    <title>Teste Api Github Globo.com</title>    
+    <!-- Bootstrap -->
+    
+    <link rel="stylesheet" href="styles/main-acd90fd318.css"/>
+    
+    <link href="styles/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1 class="title text-center">Test Api Github Globo.com</h1>
+        </div>
+        
+        <div class="row">
+            <!-- left content -->
+            <div class="container">
+                <div class="col-xs-6 col-md-6 col-lg-6" ng-controller="MainController">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading"><h2>Globo Repository List</h2></div>
+                        <div class="panel-body">    
+                          <ul class="nav nav-pills nav-stacked">
+                              <main-list></main-list>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- right content -->
+                <div class="col-xs-6 col-md-6 col-lg-6">
+                    <ng-view></ng-view>
+                </div>
+            </div>
+            
+        
+        </div>
+    </div>
+
+    <script src="scripts/main-08f75b7f9b.js"></script>
+
+</body>
+
+</html>

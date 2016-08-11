@@ -1,0 +1,12 @@
+<blockquote ng-repeat="commit in commits | orderBy:random" ng-if="$index < limit">
+    <div class="media">
+      <a class="media-left" href="#">
+        <img class="media-object" ng-src="{{getImg(commit.author.avatar_url)}}" alt="{{commit.commit.author.name}}">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">{{commit.commit.author.name}}</h4>
+        <p>{{commit.commit.message}}</p>
+      </div>
+    </div>
+    <footer>{{commit.commit.author.name}}</footer>
+</blockquote>
